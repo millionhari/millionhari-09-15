@@ -4,10 +4,14 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+.row {
+	margin: 0;
+}
+
 .nav-bar {
+	position: absolute;
 	top: 75px;
 	left: 25px;
-	position: absolute;
 	color: white !important;
 	font-weight: 800;
 	font-size: 1.5em;
@@ -26,6 +30,26 @@ body {
 				transition: .25s;
 			}
 		}
+	}
+}
+
+.social {
+	position: absolute;
+	top: 75px;
+	right: 50px;
+	color: white;
+	font-size: 1.75em;
+	.fa {
+		margin-left: 1em;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+		transition: .25s;
+	}
+	a:hover {
+		color: $coral;
+		transition: .25s;
 	}
 }
 
