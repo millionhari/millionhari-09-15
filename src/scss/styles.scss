@@ -1,0 +1,52 @@
+$coral: #f96e6f;
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.nav-bar {
+	top: 75px;
+	left: 25px;
+	position: absolute;
+	color: white !important;
+	font-weight: 800;
+	font-size: 1.5em;
+	ul {
+		list-style-type: none;
+		li {
+			display: inline;
+			margin-right: 1em;
+			a {
+				color: white;
+				text-decoration: none;
+				transition: .25s;
+			}
+			a:hover {
+				color: $coral;
+				transition: .25s;
+			}
+		}
+	}
+}
+
+.hero {
+	background: url('./img/hero.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 90vh;
+}
+
+.hero-text {
+	position: relative;
+	text-align: center;
+	top: 40%;
+	color: white !important;
+	h1 {
+		font-weight: 800;
+	}
+}
+

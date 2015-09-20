@@ -10,6 +10,6 @@
     "tests"
   ],
   "dependencies": {
-    "flat-ui": "~2.2.2"
+    "bootstrap": "~3.3.5"
   }
 }
