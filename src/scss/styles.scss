@@ -4,10 +4,6 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
-.row {
-	margin: 0;
-}
-
 .nav-bar {
 	position: absolute;
 	top: 75px;
@@ -34,9 +30,9 @@ body {
 }
 
 .social {
-	position: absolute;
-	top: 75px;
-	right: 50px;
+	// position: absolute;
+	// top: 75px;
+	// right: 50px;
 	color: white;
 	font-size: 1.75em;
 	.fa {
@@ -51,6 +47,21 @@ body {
 		color: $coral;
 		transition: .25s;
 	}
+	.fa-linkedin {
+		-webkit-animation-delay: 1.8s;
+	}
+	.fa-github {
+		-webkit-animation-delay: 1.9s;
+	}
+	.fa-twitter {
+		-webkit-animation-delay: 2.0s;
+	}
+	.fa-instagram {
+		-webkit-animation-delay: 2.1s;
+	}
+	.fa-vimeo {
+		-webkit-animation-delay: 2.2s;
+	}
 }
 
 .hero {
@@ -61,7 +72,8 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 90vh;
+	height: 100vh;
+	margin-bottom: 0;
 }
 
 .hero-text {
@@ -71,6 +83,87 @@ body {
 	color: white !important;
 	h1 {
 		font-weight: 800;
+		&.fadeInDown {
+			-webkit-animation-duration: 1.5s;
+			-webkit-animation-delay: 0s;
+		}
+	}
+	p {
+		&.fadeInDown {
+			-webkit-animation-duration: 1s;
+			-webkit-animation-delay: 1s;
+		}
 	}
 }
+
+// Basic Styles
+p {
+	line-height: 22px;
+}
+
+.resume {
+	.sub-category {
+		margin-bottom: 0;
+	}
+	.year {
+		font-size: 11px;
+	}
+}
+
+.fat {
+	font-weight: 800;
+}
+
+.medium {
+	font-weight: 700;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+.row {
+	margin: 0;
+}
+
+// Projects
+.projects {
+	.row {
+		height: 25vh;
+		position: relative;
+		img {
+			width: 200px;
+			height: auto;
+			display: inline-block;
+			margin: 0 auto;
+			margin-top: 30px;
+		}
+	}
+}
+.stego {
+	text-align: center;
+	background-color: $coral;
+	color: white;
+	top: 50%;
+	img {
+		max-width: 200px;
+		height: auto;
+	}
+}
+
+// Resume
+.category {
+	margin-bottom: 25px;
+	color: $coral;
+}
+
+.sub-category {
+	margin-top: 0;
+}
+
+
 
