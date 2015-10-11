@@ -4,6 +4,39 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+.container {
+	padding-top: 60px;
+}
+
+.intro {
+	h1 {
+		font-weight: 800;
+	}
+}
+
+* {
+	-webkit-transition: all 0.5s ease;
+}
+
+ul {
+	padding-left: 18px;
+	li {
+		list-style-type: circle;
+		line-height: 30px;
+	}
+}
+
+.divider-bottom {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 60px;
+}
+
+.inner-divider-bottom {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 30px;
+	margin-bottom: 45px;
+}
+
 .nav-bar {
 	position: absolute;
 	top: 75px;
@@ -98,16 +131,29 @@ body {
 
 // Basic Styles
 p {
-	line-height: 22px;
+	line-height: 30px;
 }
 
 .resume {
 	.sub-category {
-		margin-bottom: 0;
+		margin-bottom: 5px;
+		a {
+			text-decoration: none;
+			color: inherit;
+			transition: .25s;
+		}
+		a:hover {
+			color: $coral;
+			transition: .25s;
+		}
 	}
 	.year {
 		font-size: 11px;
 	}
+}
+
+.padding-bottom {
+		padding-bottom: 30px;
 }
 
 .fat {
@@ -133,14 +179,11 @@ p {
 // Projects
 .projects {
 	.row {
-		height: 25vh;
-		position: relative;
 		img {
 			width: 200px;
 			height: auto;
 			display: inline-block;
 			margin: 0 auto;
-			margin-top: 30px;
 		}
 	}
 }
