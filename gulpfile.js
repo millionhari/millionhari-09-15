@@ -8,7 +8,7 @@ gulp.task('sass', function(){
   gulp.src('./src/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(notify('css built'))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./dist/styles'));
 });
 
 gulp.task('sass:watch', function(){
@@ -25,5 +25,21 @@ gulp.task('html:watch', function(){
   gulp.watch('./src/index.html', ['html']);
 })
 
-gulp.task('build', ['html', 'sass']);
-gulp.task('default', ['html', 'html:watch','sass', 'sass:watch']);
+gulp.task('js', function(){
+  gulp.src('./src/js/*.js')
+    .pipe(notify('js built'))
+    .pipe(gulp.dest('./dist/js'))
+});
+
+gulp.task('js:watch', function(){
+  gulp.watch('./src/js/*.js', ['js']);
+});
+
+gulp.task('img', function(){
+  gulp.src('./src/img/*')
+    .pipe(notify('images copied over'))
+    .pipe(gulp.dest('./dist/img'))
+});
+
+gulp.task('build', ['html', 'sass', 'js', 'img']);
+gulp.task('default', ['html', 'html:watch','sass', 'sass:watch', 'js', 'js:watch', 'img']);

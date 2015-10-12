@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=.4, maximum-scale=.4">
   <title>Millionhari</title>
   <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="./bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="./bower_components/animate.css/animate.min.css" rel="stylesheet">
-  <link href="./styles.css" rel="stylesheet">
+  <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="./dist/js/smoothscroll.js"></script>
+  <link href="./dist/styles/styles.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,900,800,600,500' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class="nav-bar">
     <ul>
+      <li><a href="#about">ABOUT</a></li>
       <li><a href="#projects">WORK</a></li>
-      <li><a href="">ABOUT</a></li>
-      <li><a href="">CONTACT</a></li>
+      <li><a href="mailto:mike@millionhari.com?subject=Greetings!">CONTACT</a></li>
     </ul>
   </div>
   <div class="jumbotron hero">
@@ -30,15 +33,16 @@
         </div>
       </div>
       <div class="social">
-        <a href="https://www.linkedin.com/in/millionhari" target="_blank"><div class="fa fa-linkedin animated fadeInDown"></div></a>
+        <a href="https://www.linkedin.com/in/millionhari" target="_blank"><div class="fa fa-linkedin animated fadeInDown first-icon"></div></a>
         <a href="https://github.com/millionhari" target="_blank"><div class="fa fa-github animated fadeInDown"></div></a>
         <a href="http://twitter.com/millionhari" target="_blank"><div class="fa fa-twitter animated fadeInDown"></div></a>
         <a href="http://instagram.com/millionhari" target="_blank"><div class="fa fa-instagram animated fadeInDown"></div></a>
         <a href="https://vimeo.com/millionhari" target="_blank"><div class="fa fa-vimeo animated fadeInDown"></div></a>
+        <a href="mailto:mike@millionhari.com?subject=Greetings!"><div class="fa fa-envelope animated fadeInDown"></div></a>
       </div>
     </div>
   </div>
-  <div class="intro container">
+  <div id="about" class="intro container padding-top">
     <div class="row">
       <div class="col-md-12 text-center">
         <h1>Hello!</h1>
@@ -46,23 +50,24 @@
     </div>
     <div class="row text-center">
       <div class="col-md-8 col-md-offset-2">
-        <p>I am a full-stack engineer with a background in multimedia development. Creating is what I am passionate about, whether that be in the form of software, hardware, or art. Computers, cameras, and technology make me giddy with excitement.</p>
+        <p>I am a full-stack engineer with a background in multimedia development. Creating is what I am passionate about, whether that be in the form of software, hardware, or art. Computers, cameras, and technology fill me with excitement. In my spare time, you can find me coding, strumming the guitar, or playing video games.</p>
       </div>
     </div>
     <div class="row divider">
       <div class="col-md-8 col-md-offset-2 inner-divider-bottom"></div>
     </div>
   </div>
+
   <div class="resume container">
     <section class="skills">
       <div class="row">
         <div class="col-md-3 col-md-offset-1">
-          <h1 class="fat category">SKILLS</h1>
+          <h1 class="fat category mobile-center">SKILLS</h1>
         </div>
       </div>
       <div class="row padding-bottom">
         <div class="col-md-3 pipe col-md-offset-1">
-          <h3 class="fat sub-category">STRONG</h3>
+          <h3 class="fat sub-category">Strong</h3>
         </div>
         <div class="col-md-6 col-md-offset-1">
             <p>JavaScript, jQuery, Angular, HTML, CSS, Node, Express, Sass, Git, Firebase, Grunt, Gulp, Bootstrap, Foundation, Wordpress, Illustrator, Photoshop</p>
@@ -70,7 +75,7 @@
       </div>
       <div class="row padding-bottom">
         <div class="col-md-3 pipe col-md-offset-1">
-          <h3 class="fat sub-category">KNOWLEDGEABLE</h3>
+          <h3 class="fat sub-category">Knowledgeable</h3>
         </div>
         <div class="col-md-6 col-md-offset-1">
           <p>MongoDB, React, MySQL, CasperJS, D3, Ionic, Sketch, Subversion</p>
@@ -81,28 +86,29 @@
       </div>
     </section>
 
-    <section class="experience ">
+    <section class="experience">
       <div class="row">
         <div class="col-md-3 col-md-offset-1">
-          <h1 class="fat category">EXPERIENCE</h1>
+          <h1 class="fat category mobile-center">EXPERIENCE</h1>
         </div>
       </div>
       <div class="row padding-bottom">
         <div class="col-md-3 pipe col-md-offset-1">
-          <h3 class="fat sub-category"><a target="_blank" href="http://www.level-studios.com/">LEVEL Studios</a></h3>
-          <p class="year">2015</p>
+          <h3 class="fat sub-category company"><a target="_blank" href="http://www.level-studios.com/">LEVEL Studios</a></h3>
+          <p class="year">San Jose, CA | 2015</p>
         </div>
         <div class="col-md-6 col-md-offset-1">
             <h3 class="sub-category medium">UI Developer</h3>
             <ul>
-              <li>Built numerous web apps and web pages for LEVEL's biggest client, Apple, utilizing Angular and various internal frameworks</li>
+              <li>Built numerous web pages and web apps for LEVEL's biggest client, Apple, utilizing Angular and various internal frameworks</li>
             </ul>
         </div>
+        <div class="mobile-divider-bottom"></div>
       </div>
       <div class="row padding-bottom">
         <div class="col-md-3 pipe col-md-offset-1">
-          <h3 class="fat sub-category"><a target="_blank" href="http://www.heckyes.co/">heckyes!</a></h3>
-          <p class="year">2014-2015</p>
+          <h3 class="fat sub-category company"><a target="_blank" href="http://www.heckyes.co/">heckyes!</a></h3>
+          <p class="year">Los Angeles, CA | 2014-2015</p>
         </div>
         <div class="col-md-6 col-md-offset-1">
             <h3 class="sub-category medium">Co-founder | Web Developer | Designer</h3>
@@ -111,11 +117,12 @@
               <li>Drove the design and production of one of the largest online perfume retailers in the United States</li>
             </ul>
         </div>
+        <div class="mobile-divider-bottom"></div>
       </div>
       <div class="row padding-bottom">
         <div class="col-md-3 pipe col-md-offset-1">
-          <h3 class="fat sub-category">Gas Creative Group</h3>
-          <p class="year">2011-2014</p>
+          <h3 class="fat sub-category company">Gas Creative Group</h3>
+          <p class="year">Pomona, CA | 2011-2014</p>
         </div>
         <div class="col-md-6 col-md-offset-1">
             <h3 class="sub-category medium">Multimedia Developer</h3>
@@ -131,23 +138,68 @@
       </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section class="education">
       <div class="row">
         <div class="col-md-3 col-md-offset-1">
-          <h1 class="fat category">PROJECTS</h1>
+          <h1 class="fat category mobile-center">EDUCATION</h1>
         </div>
       </div>
       <div class="row padding-bottom">
         <div class="col-md-3 pipe col-md-offset-1">
-          <h3 class="fat sub-category"><a target="_blank" href="http://www.level-studios.com/"><img src="./img/stego.png" alt=""></a></h3>
+          <h3 class="fat sub-category company">Hack Reactor</h3>
+          <p class="year">San Francisco, CA | 2015</p>
         </div>
         <div class="col-md-6 col-md-offset-1">
-            <h3 class="sub-category medium">Scrum Master and Software Engineer</h3>
-            <ul>
-              <li>Created React components for user authentication and templating to dynamically manage animation states</li>
-              <li>Animated and designed virtual pet and landscape assets using Sass and CSS3 keyframe animations</li>
-              <li>Sped up workflow by creating Gulp tasks to automate the compilation of React components and minification of files</li>
-            </ul>
+          <h3 class="sub-category school">Advanced Software Engineering Immersive</h3>
+        </div>
+        <div class="mobile-divider-bottom"></div>
+      </div>
+      <div class="row padding-bottom">
+        <div class="col-md-3 pipe col-md-offset-1">
+          <h3 class="fat sub-category company">Cal Poly Pomona</h3>
+          <p class="year">Pomona, CA | 2011-2014</p>
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+          <h3 class="sub-category school">Computer Information Systems Major</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="download margin-bottom">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <a target="_blank" href="./dist/files/michael_hari_resume.pdf">DOWNLOAD RESUME</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container-fluid">
+    <section id="projects" class="projects">
+      <div class="row text-center stego">
+        <div class="col-md-12">
+          <img src="./dist/img/stego-white.png" alt="">
+        </div>
+        <div class="col-md-12 view-project">
+          <a href="https://chrome.google.com/webstore/detail/stego/clhbhbljbfljkadjpkmpljpohkcmonak?hl=en" target="_blank">VIEW PROJECT</a>
+        </div>
+      </div>
+
+      <div class="row text-center glint">
+        <div class="col-md-12">
+          <img src="./dist/img/glint.png" alt="">
+        </div>
+        <div class="col-md-12 view-project">
+          <a href="http://harmoniouswombat.github.io/glint/" target="_blank">VIEW PROJECT</a>
+        </div>
+      </div>
+
+      <div class="row text-center offthetruck">
+        <div class="col-md-12">
+          <img src="./dist/img/offthetruck.png" alt="">
+        </div>
+        <div class="col-md-12 view-project">
+          <a href="https://offthetruck.herokuapp.com/" target="_blank">VIEW PROJECT</a>
         </div>
       </div>
     </section>
