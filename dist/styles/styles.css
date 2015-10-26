@@ -71,7 +71,10 @@ ul {
   font-size: 1.75em; }
   @media all and (max-device-width: 767px) {
     .social {
-      font-size: 3.75em; } }
+      font-size: 3em; } }
+  @media all and (min-device-width: 768px) and (max-width: 1023px) {
+    .social {
+      font-size: 3em; } }
   .social .fa {
     margin-left: 1em; }
   .social a {
@@ -110,9 +113,9 @@ ul {
     .hero {
       height: 50vh; }
       .hero h1 {
-        font-size: 6.5em; }
+        font-size: 4.5em; }
       .hero p {
-        font-size: 2.5em; } }
+        font-size: 2em; } }
   @media all and (min-device-width: 768px) and (max-width: 1023px) {
     .hero {
       height: 400px; } }
@@ -141,7 +144,7 @@ ul {
 
 @media all and (max-device-width: 767px) {
   .download {
-    padding: 60px; } }
+    padding: 25px; } }
 
 .hero-text {
   position: relative;
@@ -183,7 +186,7 @@ p {
   font-size: 11px; }
   @media all and (max-device-width: 767px) {
     .resume .year {
-      font-size: 2.3em; } }
+      font-size: 2em; } }
 
 .padding-bottom {
   padding-bottom: 30px; }
@@ -208,7 +211,7 @@ p {
   @media all and (max-device-width: 767px) {
     .school {
       font-weight: 200;
-      font-size: 2.3em !important; } }
+      font-size: 2em !important; } }
   @media all and (min-device-width: 768px) and (max-width: 1023px) {
     .school {
       font-weight: 200;
@@ -277,7 +280,7 @@ p {
 
 @media all and (max-device-width: 767px) {
   .company {
-    font-size: 5.2em !important; } }
+    font-size: 4em !important; } }
 
 @media all and (min-device-width: 768px) and (max-width: 1023px) {
   .mobile-center {
@@ -306,9 +309,9 @@ p {
 
 @media all and (max-device-width: 767px) {
   h1 {
-    font-size: 6em; } }
+    font-size: 4.5em; } }
 
 @media all and (max-device-width: 767px) {
   p, li {
-    font-size: 3em;
-    line-height: 100px !important; } }
+    font-size: 2em;
+    line-height: 80px !important; } }
