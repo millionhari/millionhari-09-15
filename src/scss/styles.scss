@@ -11,6 +11,14 @@
 	}
 }
 
+@mixin project ($projectname){
+	background-color: $projectname;
+	a:hover {
+		color: $projectname;
+		background-color: white;
+	}
+}
+
 
 $coral: #f96e6f;
 
@@ -290,6 +298,7 @@ p {
 	$stego: #8cc866;
 	$glint: #04627e;
 	$offthetruck: #691a1c;
+	$spoilerblock: #bf4934;
 	.row {
 		img {
 			width: 300px;
@@ -331,25 +340,16 @@ p {
 		}
 	}
 	.stego {
-		background-color: $stego;
-		a:hover {
-			color: $stego;
-			background-color: white;
-		}
+		@include project($stego);
 	}
 	.glint {
-		background-color: $glint;
-		a:hover {
-			color: $glint;
-			background-color: white;
-		}
+		@include project($glint);
 	}
 	.offthetruck {
-		background-color: $offthetruck;
-		a:hover {
-			color: $offthetruck;
-			background-color: white;
-		}
+		@include project($offthetruck);
+	}
+	.spoilerblock {
+		@include project($spoilerblock);
 	}
 }
 
