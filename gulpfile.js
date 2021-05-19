@@ -41,5 +41,5 @@ gulp.task('img', function(){
     .pipe(gulp.dest('./dist/img'))
 });
 
-gulp.task('build', ['html', 'sass', 'js', 'img']);
-gulp.task('default', ['html', 'html:watch','sass', 'sass:watch', 'js', 'js:watch', 'img']);
+gulp.task('build', gulp.series(['html', 'sass', 'js', 'img']));
+gulp.task('default', gulp.series(['html', 'html:watch','sass', 'sass:watch', 'js', 'js:watch', 'img']));
